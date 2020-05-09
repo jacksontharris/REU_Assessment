@@ -59,13 +59,13 @@
                 div.transition()		
                     .duration(200)		
                     .style("opacity", .9);		
-                div	.html("<h2>"+  d.State+ "</h2>"  + "<br/>" + "White: " + d.Non_HispanicWhite + "<br/>" + "Hispanic: " + d.Hispanic + "<br/>" + "Asian: " + d.Asian)	
+                div	.html("<h2>"+  d.State+ "</h2>"  + "<br/>" + "White: " + d.Non_HispanicWhite + "<br/>" + "Hispanic: " + d.Hispanic + "<br/>" + "Asian: " + d.Asian + "<br/>" + "Black: " + d.Non_HispanicBlack +  "<br/>" + "American Indian: " + d.American_Indian + "<br/>" + "Other: " + d.Other)	
                     .style("left", (d3.event.pageX) + "px")		
                     .style("top", (d3.event.pageY - 28) + "px");	
             })
             .on("mouseout", function(d) {
                 d3.select(this)
-                .style("fill", "blue");		
+                .style("fill", "#3c373d");		
                 div.transition()		
                     .duration(500)		
                     .style("opacity", 0);		
