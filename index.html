@@ -8,7 +8,8 @@
 <style></style>
 </head>
 <body>
-    <div id="container" class="svg-container">
+    <div id="container" class="svg-container" style="z-index: -1">
+        <h1 style="z-index: 1">Coronavirus Does Not Discriminate: Proportional Death Rates by Race</h1>
     </div>
 	<script type="text/javascript">
     var w = 1400;
@@ -58,7 +59,7 @@
                 div.transition()		
                     .duration(200)		
                     .style("opacity", .9);		
-                div	.html("Proportional Death Rates by Race in " + d.State + "<br/>" + "White: " + d.Non_HispanicWhite + "<br/>" + "Hispanic: " + d.Hispanic + "<br/>" + "Asian: " + d.Asian)	
+                div	.html("<h2>"+  d.State+ "</h2>"  + "<br/>" + "White: " + d.Non_HispanicWhite + "<br/>" + "Hispanic: " + d.Hispanic + "<br/>" + "Asian: " + d.Asian)	
                     .style("left", (d3.event.pageX) + "px")		
                     .style("top", (d3.event.pageY - 28) + "px");	
             })
